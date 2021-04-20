@@ -1,0 +1,1 @@
+Mi programa es simplemente un "Hola mundo" para corroborar que el repo funcione bien.
