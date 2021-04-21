@@ -8,11 +8,47 @@ int obtenerCadenaDeArchivo(FILE* f, char* cadena);
 
 int evaluacionDeCadena(char* cadena);
 
-int matrizTT[4][3];
-
-
 int main()
 {
+    int matrizTT[6][6] = {
+        matrizTT[0][0] = 0,
+        matrizTT[0][1] = 2,
+        matrizTT[0][2] = 2,
+        matrizTT[0][3] = 6,
+        matrizTT[0][4] = 6,
+        matrizTT[0][5] = 6,
+        matrizTT[1][0] = 5,
+        matrizTT[1][1] = 5,
+        matrizTT[1][2] = 6,
+        matrizTT[1][3] = 6,
+        matrizTT[1][4] = 3,
+        matrizTT[1][5] = 6,
+        matrizTT[2][0] = 2,
+        matrizTT[2][1] = 2,
+        matrizTT[2][2] = 2,
+        matrizTT[2][3] = 6,
+        matrizTT[2][4] = 6,
+        matrizTT[2][5] = 6,
+        matrizTT[3][0] = 4,
+        matrizTT[3][1] = 4,
+        matrizTT[3][2] = 4,
+        matrizTT[3][3] = 4,
+        matrizTT[3][4] = 6,
+        matrizTT[3][5] = 6,
+        matrizTT[4][0] = 4,
+        matrizTT[4][1] = 4,
+        matrizTT[4][2] = 4,
+        matrizTT[4][3] = 4,
+        matrizTT[4][4] = 6,
+        matrizTT[4][5] = 6,
+        matrizTT[5][0] = 5,
+        matrizTT[5][1] = 5,
+        matrizTT[5][2] = 6,
+        matrizTT[5][3] = 6,
+        matrizTT[5][4] = 6,
+        matrizTT[5][5] = 6,
+    };
+
     FILE* archivoEntrada = fopen("texto.txt","rt");
     FILE* archivoSalida = fopen("salida.txt","wt+");
     int resultado, n = 0;
@@ -82,22 +118,80 @@ int evaluacionDeCadena(char* cadena) {
         
         switch( caracter ){
         
-            case 'a': columna = 0;
-                fila = matrizTT[fila][columna];
+            case '0': 
+               /*Algo*/
                 break;
-            case 'b': columna = 1;
-                fila = matrizTT[fila][columna];
+            case '1': 
+               /*Algo*/
                 break;
-            default: columna = 2;
-                fila = 3;
+            case '2': 
+               /*Algo*/
                 break;
-        
+            case '3': 
+               /*Algo*/
+                break;
+            case '4': 
+               /*Algo*/
+                break;
+            case '5': 
+               /*Algo*/
+                break;
+            case '6': 
+               /*Algo*/
+                break;
+            case '7': 
+               /*Algo*/
+                break;
+            case '8': 
+               /*Algo*/
+                break;        
+            case '9': 
+               /*Algo*/
+                break;
+            case 'a': 
+               /*Algo*/
+                break;
+            case 'b': 
+               /*Algo*/
+                break;
+            case 'c': 
+               /*Algo*/
+                break;
+            case 'd': 
+               /*Algo*/
+                break;
+            case 'e': 
+               /*Algo*/
+                break;
+            case 'f': 
+               /*Algo*/
+                break;
+            case 'A': 
+               /*Algo*/
+                break;
+            case 'B': 
+               /*Algo*/
+                break;
+            case 'C': 
+               /*Algo*/
+                break;
+            case 'D': 
+               /*Algo*/
+                break;
+            case 'E': 
+               /*Algo*/
+                break;
+            case 'F': 
+               /*Algo*/
+                break;                                                                                                                           
+            default: 
+                columna = 5;
+                fila = 5;
+                break;
         
         }
-
         i++;
         caracter = cadena[i];
-    
     }
 
     return fila;
